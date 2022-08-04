@@ -36,13 +36,20 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
   vim.keymap.set('n', '<leader>f', vim.lsp.buf.formatting, bufopts)
 end
+
+-- Setup lspconfig.
+local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+
 lspconfig.sumneko_lua.setup {
     cmd = { vim.fn.exepath("lua-language-server") },
     flags = lsp_flags,
-    on_attach = on_attach
+    on_attach = on_attach,
+    capabilities = capabilities
 }
+
 lspconfig.tsserver.setup {
     flags = lsp_flags,
-    on_attach = on_attach
+    on_attach = on_attach,
+    capabilities = capabilities
 }
 
