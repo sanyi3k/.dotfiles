@@ -53,3 +53,8 @@ lspconfig.tsserver.setup {
     capabilities = capabilities
 }
 
+lspconfig.graphql.setup {
+    flags = lsp_flags,
+    on_attach = on_attach,
+    capabilities = capabilities
+}

@@ -13,12 +13,13 @@ local projectSettings = {
             ["*/terkom-monorepo/*.tsx"] = 2,
             ["*/terkom-monorepo/**/*.json"] = 2,
             ["*/terkom-monorepo/*.json"] = 2,
-            ["*/terkom-monorepo-2/**/*.ts"] = 2,
-            ["*/terkom-monorepo-2/*.ts"] = 2,
-            ["*/terkom-monorepo-2/**/*.tsx"] = 2,
-            ["*/terkom-monorepo-2/*.tsx"] = 2,
-            ["*/terkom-monorepo-2/**/*.json"] = 2,
-            ["*/terkom-monorepo-2/*.json"] = 2
+            ["*/terko-mobile/**/*.ts"] = 2,
+            ["*/terko-mobile/*.ts"] = 2,
+            ["*/terko-mobile/**/*.tsx"] = 2,
+            ["*/terko-mobile/*.tsx"] = 2,
+            ["*/terko-mobile/**/*.json"] = 2,
+            ["*/terko-mobile/*.json"] = 2,
+            ["*/terko-mobile/*.graphql"] = 2,
 }
 
 local setTab = function(size) vim.opt.tabstop = size vim.opt.softtabstop = size vim.opt.shiftwidth = size end
